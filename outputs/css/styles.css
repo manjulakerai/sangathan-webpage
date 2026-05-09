@@ -659,9 +659,10 @@ p {
 
 .figures-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex-wrap: nowrap;
+  gap: 2rem;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 2.5rem;
 }
 
@@ -670,7 +671,7 @@ p {
 }
 
 .figure-card-img {
-  width: 200px;
+  width: 150px;
   height: auto;
   border-radius: 8px;
 }
