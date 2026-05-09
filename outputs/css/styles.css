@@ -36,7 +36,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 88px;
+  scroll-padding-top: 158px;
 }
 
 body {
@@ -243,10 +243,11 @@ p {
 }
 
 .nav .container {
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 150px;
 }
 
 .nav-brand {
@@ -257,7 +258,7 @@ p {
 }
 
 .nav-logo {
-  height: 60px;
+  height: 140px;
   width: auto;
 }
 
@@ -270,7 +271,7 @@ p {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 80px;
+  top: 150px;
   left: 0;
   right: 0;
   background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-accent-dark) 100%);
@@ -303,19 +304,45 @@ p {
   padding-left: 1.75rem;
 }
 
+/* Nav CTA group (right side) — hidden on mobile, shown on desktop via media query */
+.nav-cta {
+  display: none;
+}
+
+.nav-phone {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-gold);
+  color: var(--color-dark) !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background 0.25s ease;
+}
+
+.nav-phone:hover {
+  background: var(--color-gold-light);
+}
+
 .nav-emergency {
+  display: inline-block;
+  padding: 0.6rem 1.2rem !important;
   background: #c0392b !important;
   color: #fff !important;
-  border-radius: 4px !important;
+  border-radius: 6px !important;
   font-weight: 700;
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
   border-left-color: transparent !important;
-  transition: background 0.25s ease, transform 0.15s ease !important;
+  transition: background 0.25s ease !important;
 }
 
 .nav-emergency:hover {
   background: #e74c3c !important;
-  padding-left: 1.5rem !important;
   border-left-color: transparent !important;
 }
 
@@ -394,12 +421,27 @@ p {
   display: block;
 }
 
+.hero-countdown-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--color-accent-dark);
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
 .hero-dates {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   letter-spacing: 1px;
   color: var(--color-accent-dark);
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-countdown-title {
+    font-size: 1.6rem;
+  }
 }
 
 .countdown {
@@ -489,7 +531,7 @@ p {
 .definition {
   text-align: center;
   padding: 4rem 1.5rem;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 150px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -752,7 +794,7 @@ p {
 
 /* Coming-soon full-viewport layout for stub pages */
 .coming-soon-page {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
 }
@@ -770,7 +812,7 @@ p {
 
 /* Inner page header + first section viewport landing */
 .page-intro {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
 }
@@ -1424,14 +1466,24 @@ p {
     flex-direction: row;
     position: static;
     padding: 0;
-    gap: 0.15rem;
+    flex: 1;
+    justify-content: center;
+    gap: 0.25rem;
     background: none;
     box-shadow: none;
     border-top: none;
+    margin: 0 1.5rem;
+  }
+
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
   }
 
   .nav-links li a {
-    padding: 0.45rem 0.7rem;
+    padding: 0.5rem 0.85rem;
     border-radius: 4px;
     border-left: none;
     position: relative;
