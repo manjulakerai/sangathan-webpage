@@ -397,16 +397,7 @@ p {
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vmin;
-  height: 90vmin;
-  background: url('../images/logo-white.svg') no-repeat center / contain;
-  opacity: 0.25;
-  pointer-events: none;
+  display: none;
 }
 
 .hero-content {
