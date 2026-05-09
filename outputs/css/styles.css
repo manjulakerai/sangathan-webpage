@@ -669,6 +669,32 @@ p {
   text-align: center;
 }
 
+.figure-card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blessing-letter-full {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.blessing-letter-full img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid rgba(92,34,72,0.1);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.blessing-letter-full figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  font-style: italic;
+}
+
 .figure-card figcaption {
   margin-top: 0.5rem;
   font-size: 0.85rem;
@@ -700,6 +726,16 @@ p {
   line-height: 1.7;
 }
 
+.founding-text--large {
+  max-width: 840px;
+  font-size: 1.1rem;
+  line-height: 1.85;
+}
+
+.founding-text--large p {
+  margin-bottom: 1.5rem;
+}
+
 .founding-highlight {
   text-align: center;
   font-family: var(--font-heading);
@@ -716,11 +752,12 @@ p {
   margin-bottom: 2rem;
 }
 
-.founding-letter img {
+.founding-letter-img {
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
   border: 2px solid rgba(92,34,72,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 @media (min-width: 768px) {
