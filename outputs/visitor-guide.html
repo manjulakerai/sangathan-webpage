@@ -15,19 +15,22 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-brand">SSMB Sydney</a>
+      <a href="index.html" class="nav-brand"><img src="images/logo-white.svg" alt="SSMB Sydney" class="nav-logo"></a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="journey.html">Our Journey</a></li>
         <li><a href="schedule.html">Schedule</a></li>
         <li><a href="guests.html">Guests</a></li>
         <li><a href="register.html">Register</a></li>
         <li><a href="visitor-guide.html" class="active">Visitor Guide</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="#emergency" class="nav-emergency">Emergency</a></li>
       </ul>
     </div>
   </nav>
@@ -41,24 +44,96 @@
   </section>
 
   <!-- Quick Nav -->
-  <section class="section bg-cream" style="padding-top:2rem;padding-bottom:2rem;">
+  <section class="section bg-cream" style="padding-top:1.5rem;padding-bottom:1.5rem;">
     <div class="container">
-      <div class="home-links" style="justify-content:center;">
-        <a href="#directions" class="directions-link">Getting Here</a>
-        <a href="#emergency" class="directions-link">Emergency</a>
-        <a href="#temples" class="directions-link">Temples</a>
-        <a href="#things-to-do" class="directions-link">Things to Do</a>
-        <a href="#whats-on" class="directions-link">What's On</a>
-        <a href="#travel" class="directions-link">Travel Help</a>
-        <a href="#mobile" class="directions-link">Connectivity</a>
-        <a href="#watch-live" class="directions-link">Watch from Home</a>
-        <a href="#get-involved" class="directions-link">Get Involved</a>
+      <nav class="jump-nav" aria-label="Page sections">
+        <a href="#plan-your-visit">Plan Your Visit</a>
+        <a href="#directions">Getting Here</a>
+        <a href="#where-to-stay">Where to Stay</a>
+        <a href="#emergency">Emergency</a>
+        <a href="#temples">Temples</a>
+        <a href="#things-to-do">Things to Do</a>
+        <a href="#whats-on">What's On</a>
+        <a href="#travel">Travel Help</a>
+        <a href="#mobile">Connectivity</a>
+        <a href="#practical-info">Practical Info</a>
+        <a href="#watch-live">Watch from Home</a>
+        <a href="#get-involved">Get Involved</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Plan Your Visit (Pre-Arrival) -->
+  <section id="plan-your-visit" class="section">
+    <div class="container">
+      <h2 class="section-title">Plan Your Visit</h2>
+      <p class="whats-on-intro">Travelling from overseas or interstate? Here's everything you need to prepare before you arrive in Sydney.</p>
+
+      <div class="whats-on-grid">
+
+        <div class="whats-on-card">
+          <h3>&#128196; Visa &amp; Entry</h3>
+          <p>Most visitors to Australia need an <strong>Electronic Travel Authority (ETA, subclass 601)</strong>. You can apply online through the <strong>Australian Government's official ETA app</strong> &mdash; it's quick and usually approved within minutes.</p>
+          <p>Citizens of <strong>New Zealand</strong> can visit Australia without a visa under the Trans-Tasman travel arrangement.</p>
+          <p class="car-hire-note">Apply well in advance. Check your eligibility and visa options at <a href="https://immi.homeaffairs.gov.au/" target="_blank" rel="noopener">immi.homeaffairs.gov.au</a></p>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#127777; What to Pack</h3>
+          <p>Sydney in July is <strong>winter</strong> &mdash; expect temperatures between <strong>8&ndash;17&deg;C</strong>. The weather can be mild and sunny during the day but chilly in the mornings and evenings.</p>
+          <ul class="car-hire-list">
+            <li><strong>Warm layers</strong> &mdash; Jumper, jacket, or fleece for cool mornings and evenings</li>
+            <li><strong>Rain jacket</strong> &mdash; Winter showers are common</li>
+            <li><strong>Comfortable walking shoes</strong> &mdash; Especially for temple visits and sightseeing</li>
+            <li><strong>Power adapters</strong> &mdash; Australia uses Type I plugs (230V, 50Hz)</li>
+            <li><strong>Sunscreen</strong> &mdash; The Australian sun is strong, even on clear winter days</li>
+          </ul>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#128176; Currency &amp; Payments</h3>
+          <p>Australia uses the <strong>Australian Dollar (AUD)</strong>. You'll find payments easy and cashless-friendly across Sydney.</p>
+          <ul class="car-hire-list">
+            <li><strong>Contactless payment</strong> &mdash; Widely accepted at shops, restaurants, and transport. Tap your card or phone almost everywhere.</li>
+            <li><strong>ATMs</strong> &mdash; Available at every shopping centre, train station, and main street</li>
+            <li><strong>Tipping</strong> &mdash; Not expected in Australia. Service is included in the price.</li>
+          </ul>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#128737; Travel Insurance</h3>
+          <p><strong>Strongly recommended</strong> for all overseas visitors. Australia's public healthcare system (Medicare) does not cover international visitors, and medical costs can be very high.</p>
+          <p>Make sure your policy covers medical emergencies, trip cancellation, and lost luggage.</p>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#9201; Jet Lag Tips</h3>
+          <p>Sydney is <strong>UTC+10 (AEST)</strong> in July. Depending on where you're travelling from, the time difference can be significant.</p>
+          <ul class="car-hire-list">
+            <li>Try to <strong>arrive a day early</strong> if possible to rest and adjust</li>
+            <li>Stay hydrated during your flight</li>
+            <li>Get some sunlight on arrival to help reset your body clock</li>
+          </ul>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#9989; Arrival Checklist</h3>
+          <p>Before you leave home, make sure you have these essentials ready:</p>
+          <ul class="car-hire-list">
+            <li><strong>Passport</strong> &mdash; Valid for the duration of your stay</li>
+            <li><strong>Visa / ETA confirmation</strong> &mdash; Screenshot or printout</li>
+            <li><strong>Travel insurance documents</strong> &mdash; Policy number and emergency contact</li>
+            <li><strong>Emergency contact card</strong> &mdash; With local and home contacts</li>
+            <li><strong>Temple address saved offline</strong> &mdash; 1/3 Tasha Place, Kings Park NSW 2148</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Directions -->
-  <section id="directions" class="section">
+  <section id="directions" class="section bg-cream">
     <div class="container">
       <h2 class="section-title">Getting Here</h2>
 
@@ -175,7 +250,7 @@
             <li>
               <strong>Vaishnav's</strong> &mdash; Pure vegetarian, no onion, no garlic. Fresh cuisine made in our Temple. Catering available for all occasions.
               <br>
-              <a href="https://www.vaishnavs.sydney/" target="_blank" rel="noopener" class="directions-link" style="margin-top:0.5rem; font-size:0.85rem;">Visit Vaishnav's</a>
+              <a href="https://www.vaishnavs.sydney/" target="_blank" rel="noopener" class="directions-link">Visit Vaishnav's</a>
             </li>
           </ul>
           <p class="car-hire-note">Most restaurants in the Harris Park area cater to Gujarati and South Indian vegetarian preferences. Ask the organisers for current recommendations.</p>
@@ -246,6 +321,49 @@
         <div class="direction-card direction-card--muted">
           <h3>Additional Event Venues</h3>
           <p>Further venue details will be announced as the program is finalised.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Where to Stay -->
+  <section id="where-to-stay" class="section">
+    <div class="container">
+      <h2 class="section-title">Where to Stay</h2>
+      <p class="whats-on-intro">Whether you prefer a hotel, a budget stay, or the warmth of a local family home, there are great options near the Mandir.</p>
+
+      <div class="directions-grid">
+
+        <div class="direction-card">
+          <h3>Hotels Near the Mandir</h3>
+          <p>These hotels are all within easy reach of Kings Park:</p>
+          <ul class="car-hire-list">
+            <li>
+              <strong>Novotel Sydney West HQ</strong> &mdash; 1 Richmond Rd, Blacktown NSW 2148. Modern hotel with restaurant and pool, approximately 2 km from the Mandir.
+            </li>
+            <li>
+              <strong>Mercure Sydney Westmead</strong> &mdash; 6 Redbank Rd, Westmead NSW 2145. Comfortable stay near Westmead Hospital, approximately 8 km from the Mandir.
+            </li>
+            <li>
+              <strong>Travelodge Hotel Blacktown</strong> &mdash; 44 Forge St, Blacktown NSW 2148. Budget-friendly and well-located, approximately 1.5 km from the Mandir.
+            </li>
+          </ul>
+          <p class="car-hire-note">Book early &mdash; July is a popular time and rooms near the Mandir fill up quickly during large events.</p>
+        </div>
+
+        <div class="direction-card">
+          <h3>Budget Options</h3>
+          <p>Looking for something more affordable or homely?</p>
+          <ul class="car-hire-list">
+            <li>
+              <strong>Airbnb</strong> &mdash; Search for stays in Kings Park, Blacktown, or Seven Hills for the best proximity to the Mandir. Many listings offer full kitchens, which can be helpful for vegetarian cooking.
+            </li>
+            <li>
+              <strong>Homestay with local families</strong> &mdash; Some local families generously open their homes to visiting devotees. Contact the temple directly to enquire about homestay availability.
+            </li>
+          </ul>
+          <p class="car-hire-note">For homestay enquiries, please reach out to the organisers well in advance so arrangements can be made.</p>
         </div>
 
       </div>
@@ -329,6 +447,34 @@
           <address>1 Temple Road, Helensburgh NSW 2508</address>
           <p class="car-hire-note">Same complex as Sri Venkateswara Temple</p>
           <a href="https://www.svtsydney.org/" target="_blank" rel="noopener" class="directions-link">Visit Website</a>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>Shree Swaminarayan Mandir (ISSO)</h3>
+          <p class="whats-on-dates">Blacktown, NSW</p>
+          <p>International Swaminarayan Satsang Organisation temple, affiliated with Shree Swaminarayan Mandir Kalupur, Ahmedabad.</p>
+          <address>1/44 Bessemer Street, Blacktown NSW 2148</address>
+          <p>Ph: <a href="tel:+61296764480">(02) 9676 4480</a></p>
+          <ul class="car-hire-list">
+            <li>Daily: 8:30 AM &ndash; 11:30 AM &amp; 4:30 PM &ndash; 8:00 PM</li>
+            <li>Morning Aarti: 7:30 AM &bull; Evening Aarti: 7:00 PM</li>
+            <li>Sunday Sabha: 5:00 PM &ndash; 7:00 PM</li>
+          </ul>
+          <a href="https://swaminarayan.sydney/" target="_blank" rel="noopener" class="directions-link">Visit Website</a>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>Shree Swaminarayan Mandir Vadtaldham</h3>
+          <p class="whats-on-dates">Riverstone, NSW</p>
+          <p>Vadtal Diocese temple serving the Swaminarayan community in north-west Sydney.</p>
+          <address>222 Hamilton Street, Riverstone NSW 2765</address>
+          <p>Ph: <a href="tel:+61450104445">0450 104 445</a><br>
+          Email: <a href="mailto:info@vadtaldham.org.au">info@vadtaldham.org.au</a></p>
+          <ul class="car-hire-list">
+            <li>Morning: 9:00 AM &ndash; 12:00 PM</li>
+            <li>Evening: 5:00 PM &ndash; 8:00 PM</li>
+          </ul>
+          <a href="https://vadtaldham.org.au" target="_blank" rel="noopener" class="directions-link">Visit Website</a>
         </div>
 
       </div>
@@ -669,8 +815,73 @@
     </div>
   </section>
 
+  <!-- Practical Info -->
+  <section id="practical-info" class="section">
+    <div class="container">
+      <h2 class="section-title">Practical Info</h2>
+      <p class="whats-on-intro">A few handy things to know about daily life in Australia to help you feel right at home.</p>
+
+      <div class="whats-on-grid">
+
+        <div class="whats-on-card">
+          <h3>&#128588; Customs &amp; Etiquette</h3>
+          <p>Australians are friendly, laid-back, and informal. Don't be surprised if someone greets you with a casual <strong>"G'day!"</strong> &mdash; it's a warm hello.</p>
+          <ul class="car-hire-list">
+            <li>Queue patiently &mdash; Australians value fairness and orderly queues</li>
+            <li>A smile and "thank you" go a long way</li>
+            <li>First names are used freely, even in professional settings</li>
+          </ul>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#128181; Tipping</h3>
+          <p><strong>Tipping is not expected</strong> in Australia. Service staff are paid a fair wage, and there is no obligation to leave a tip at restaurants, cafes, or taxis.</p>
+          <p>Some restaurants may add a <strong>surcharge on weekends and public holidays</strong> (typically 10&ndash;15%) &mdash; this is clearly noted on the menu and covers higher staff wages on those days.</p>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#128167; Drinking Water</h3>
+          <p><strong>Tap water is safe to drink</strong> throughout Sydney and across Australia. You can fill your bottle from any tap &mdash; no need to buy bottled water.</p>
+          <p>Many public spaces, parks, and shopping centres have drinking water fountains.</p>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#128241; Useful Apps</h3>
+          <p>Download these before you arrive to make getting around Sydney easy:</p>
+          <ul class="car-hire-list">
+            <li><strong>Opal Travel</strong> &mdash; Official public transport app for Sydney trains, buses, ferries, and light rail</li>
+            <li><strong>TripView</strong> &mdash; Real-time train and bus timetables (a local favourite)</li>
+            <li><strong>Google Maps</strong> &mdash; Navigation and public transport directions</li>
+            <li><strong>Uber</strong> &mdash; Rideshare, widely available across Sydney</li>
+            <li><strong>WhatsApp</strong> &mdash; Stay in touch with family and event organisers</li>
+          </ul>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#127462;&#127482; Australian Phrases</h3>
+          <p>You might hear some uniquely Australian expressions during your visit. Here's a quick guide:</p>
+          <ul class="car-hire-list">
+            <li><strong>"Arvo"</strong> &mdash; Afternoon</li>
+            <li><strong>"No worries"</strong> &mdash; You're welcome / it's all good</li>
+            <li><strong>"Servo"</strong> &mdash; Petrol station (gas station)</li>
+            <li><strong>"Macca's"</strong> &mdash; McDonald's</li>
+            <li><strong>"Brekkie"</strong> &mdash; Breakfast</li>
+            <li><strong>"Reckon"</strong> &mdash; Think / believe</li>
+          </ul>
+        </div>
+
+        <div class="whats-on-card">
+          <h3>&#128197; Public Holidays</h3>
+          <p>There are <strong>no public holidays</strong> during 4&ndash;12 July 2026, so shops, transport, and services will operate on regular schedules.</p>
+          <p>However, <strong>NAIDOC Week</strong> (5&ndash;12 July) is celebrated city-wide with cultural events, markets, and community gatherings honouring Aboriginal and Torres Strait Islander peoples.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Watch Live / Chromecast -->
-  <section id="watch-live" class="section">
+  <section id="watch-live" class="section bg-alt">
     <div class="container">
       <h2 class="section-title">Watch from Home</h2>
       <p class="whats-on-intro">Can't make it in person? Follow along from anywhere in the world.</p>
@@ -773,6 +984,10 @@
     <div class="container">
       <div class="footer-name">Shree Swaminarayan Temple Sydney Inc.</div>
       <div>Established 2001</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
       <small>&copy; 2026 SSMB Sydney. All rights reserved.</small>
     </div>
   </footer>

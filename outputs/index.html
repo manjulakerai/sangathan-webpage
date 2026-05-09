@@ -15,19 +15,22 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-brand">SSMB Sydney</a>
+      <a href="index.html" class="nav-brand"><img src="images/logo-white.svg" alt="SSMB Sydney" class="nav-logo"></a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="journey.html">Our Journey</a></li>
         <li><a href="schedule.html">Schedule</a></li>
         <li><a href="guests.html">Guests</a></li>
         <li><a href="register.html">Register</a></li>
         <li><a href="visitor-guide.html">Visitor Guide</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="visitor-guide.html#emergency" class="nav-emergency">Emergency</a></li>
       </ul>
     </div>
   </nav>
@@ -38,6 +41,12 @@
       <img src="images/logo-color.svg" alt="Sangathan Parva — 25 Years, A Celebration of Unity" class="hero-logo" width="400" height="480">
       <hr class="hero-divider">
       <p class="hero-dates">4 July &ndash; 12 July 2026</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-item"><span class="countdown-number" id="cd-days">--</span><span class="countdown-label">Days</span></div>
+        <div class="countdown-item"><span class="countdown-number" id="cd-hours">--</span><span class="countdown-label">Hours</span></div>
+        <div class="countdown-item"><span class="countdown-number" id="cd-mins">--</span><span class="countdown-label">Minutes</span></div>
+        <div class="countdown-item"><span class="countdown-number" id="cd-secs">--</span><span class="countdown-label">Seconds</span></div>
+      </div>
       <p class="hero-org">Shree Swaminarayan Mandir Bhuj, Sydney</p>
       <a href="#about" class="hero-scroll" aria-label="Scroll down">Discover</a>
     </div>
@@ -83,7 +92,13 @@
         <a href="guests.html" class="directions-link">Guests &amp; Delegates</a>
         <a href="register.html" class="directions-link">Register</a>
         <a href="visitor-guide.html" class="directions-link directions-link--outline">Visitor Guide</a>
+        <a href="donate.html" class="directions-link directions-link--outline">Donate &amp; Seva</a>
         <a href="contact.html" class="directions-link directions-link--outline">Contact Us</a>
+      </div>
+
+      <div class="whatsapp-banner">
+        <p>Stay updated via our WhatsApp channel for schedule changes, live updates, and announcements during Sangathan Parva.</p>
+        <div class="placeholder-box" style="margin-top:1rem; padding:1.5rem;">WhatsApp channel link coming soon.</div>
       </div>
     </div>
   </section>
@@ -93,6 +108,10 @@
     <div class="container">
       <div class="footer-name">Shree Swaminarayan Temple Sydney Inc.</div>
       <div>Established 2001</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
       <small>&copy; 2026 SSMB Sydney. All rights reserved.</small>
     </div>
   </footer>
