@@ -1,0 +1,75 @@
+<%- include('partials/head', {
+  title: 'Sangathan Parva | SSMB Sydney 25th Anniversary',
+  description: 'Celebrating 25 years of Shree Swaminarayan Temple Sydney. Sangathan Parva — A Celebration of Unity. 4-12 July 2026.'
+}) %>
+<%- include('partials/nav', { active: 'home' }) %>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-countdown-title">Countdown to Sangathan Parva &mdash; A Celebration of Unity&hellip;</p>
+    <div class="countdown" id="countdown">
+      <div class="countdown-item"><span class="countdown-number" id="cd-days">--</span><span class="countdown-label">Days</span></div>
+      <div class="countdown-item"><span class="countdown-number" id="cd-hours">--</span><span class="countdown-label">Hours</span></div>
+      <div class="countdown-item"><span class="countdown-number" id="cd-mins">--</span><span class="countdown-label">Minutes</span></div>
+      <div class="countdown-item"><span class="countdown-number" id="cd-secs">--</span><span class="countdown-label">Seconds</span></div>
+    </div>
+    <hr class="hero-divider">
+    <p class="hero-dates">Saturday 4th &ndash; Sunday 12th July 2026</p>
+    <p class="hero-org">Shree Swaminarayan Mandir Bhuj, Sydney</p>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">Discover</a>
+  </div>
+</section>
+
+<!-- Sangathan Definition -->
+<section class="definition bg-cream">
+  <div class="container">
+    <div class="definition-word">Sangathan</div>
+    <div class="definition-phonetic">[san-ga-tana] &nbsp; <em>noun</em></div>
+    <div class="definition-meaning">The quality of being united into one</div>
+  </div>
+</section>
+
+<!-- Event Overview -->
+<section id="about" class="section bg-alt">
+  <div class="container">
+    <h2 class="section-title">The Celebration</h2>
+
+    <div class="event-card">
+      <dl>
+        <dt>Event</dt>
+        <dd>Sangathan Parva &mdash; A Celebration of Unity</dd>
+
+        <dt>Dates</dt>
+        <dd>4 July &ndash; 12 July 2026</dd>
+
+        <dt>Milestone</dt>
+        <dd>25 Years of Establishment</dd>
+
+        <dt>Expected Guests</dt>
+        <dd>500+ haribhakto from across Australia and overseas</dd>
+
+        <dt>Purpose</dt>
+        <dd>To strengthen the bonds among haribhakto across Sydney, promote unity, and inspire increased bhajan bhakti</dd>
+      </dl>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="home-links">
+      <a href="/sangathan/journey" class="directions-link">Our Journey</a>
+      <a href="/sangathan/schedule" class="directions-link">Schedule &amp; Uniform</a>
+      <a href="/sangathan/guests" class="directions-link">Guests &amp; Delegates</a>
+      <a href="/sangathan/register" class="directions-link">Register</a>
+      <a href="/sangathan/visitor-guide" class="directions-link directions-link--outline">Visitor Guide</a>
+      <a href="/sangathan/donate" class="directions-link directions-link--outline">Donate &amp; Seva</a>
+      <a href="/sangathan/contact" class="directions-link directions-link--outline">Contact Us</a>
+    </div>
+
+    <div class="whatsapp-banner">
+      <p>Stay updated via our WhatsApp channel for schedule changes, live updates, and announcements during Sangathan Parva.</p>
+      <div class="placeholder-box" style="margin-top:1rem; padding:1.5rem;">WhatsApp channel link coming soon.</div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
