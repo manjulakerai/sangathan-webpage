@@ -22,6 +22,10 @@
     .sp-day-grid .sp-table { max-width:100%; }
     .sp-day h3 { text-align:center; margin-bottom:1rem; }
     @media (max-width:760px){ .sp-day-grid { grid-template-columns:1fr; } }
+    .sp-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; max-width:100%; margin:1.5rem auto 0; }
+    @media (max-width:760px){ .sp-gallery { grid-template-columns:1fr; } }
+    .sp-gallery a { display:block; border-radius:8px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.12); }
+    .sp-gallery img { width:100%; height:auto; display:block; }
   </style>
 </head>
 <body>
@@ -36,7 +40,6 @@
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="sangathan-parva.html">Sangathan Parva</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="journey.html">Our Journey</a></li>
         <li><a href="schedule.html" class="active">Schedule</a></li>
@@ -281,6 +284,22 @@
           </tbody></table>
         </div>
 
+      </div>
+
+      <h3 style="text-align:center; margin-top:1rem;">Official Schedule</h3>
+      <p class="whats-on-intro">The full schedule as issued by Shree Swaminarayan Mandir Bhuj, Sydney. Tap any page to enlarge.</p>
+      <div class="sp-gallery">
+        <a href="images/schedule/page-01.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-01.jpg" alt="Sangathan Parva schedule — cover" loading="lazy"></a>
+        <a href="images/schedule/page-02.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-02.jpg" alt="Sangathan Parva schedule — overview" loading="lazy"></a>
+        <a href="images/schedule/page-03.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-03.jpg" alt="Schedule — Saturday 4 July" loading="lazy"></a>
+        <a href="images/schedule/page-04.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-04.jpg" alt="Schedule — Sunday 5 July" loading="lazy"></a>
+        <a href="images/schedule/page-05.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-05.jpg" alt="Schedule — Monday 6 July" loading="lazy"></a>
+        <a href="images/schedule/page-06.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-06.jpg" alt="Schedule — Tuesday 7 July" loading="lazy"></a>
+        <a href="images/schedule/page-07.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-07.jpg" alt="Schedule — Wednesday 8 July" loading="lazy"></a>
+        <a href="images/schedule/page-08.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-08.jpg" alt="Schedule — Thursday 9 July" loading="lazy"></a>
+        <a href="images/schedule/page-09.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-09.jpg" alt="Schedule — Friday 10 July" loading="lazy"></a>
+        <a href="images/schedule/page-10.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-10.jpg" alt="Schedule — Saturday 11 July" loading="lazy"></a>
+        <a href="images/schedule/page-11.jpg" target="_blank" rel="noopener"><img src="images/schedule/page-11.jpg" alt="Schedule — Sunday 12 July" loading="lazy"></a>
       </div>
     </div>
   </section>
