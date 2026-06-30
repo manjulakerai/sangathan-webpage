@@ -45,7 +45,7 @@
       return;
     }
 
-    var days = Math.floor(diff / 86400000);
+    var days = Math.ceil(diff / 86400000);
     var hours = Math.floor((diff % 86400000) / 3600000);
     var mins = Math.floor((diff % 3600000) / 60000);
     var secs = Math.floor((diff % 60000) / 1000);
