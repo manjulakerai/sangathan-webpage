@@ -1706,3 +1706,11 @@ a:focus-visible, button:focus-visible, .directions-link:focus-visible, .nav-togg
 /* Bring schedule tables onto the site palette (was off-brand magenta) */
 .sp-table th { background: var(--color-accent); }
 .sp-table .sp-sub th { background: var(--color-accent-light); }
+
+/* Honoured guest: photo + details side by side (stacks on mobile) */
+.guest-feature { display: flex; align-items: center; gap: 1.75rem; text-align: left; flex-wrap: wrap; justify-content: center; }
+.guest-feature__img { width: 170px; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(60,20,50,0.18); flex-shrink: 0; }
+.guest-feature__info { flex: 1; min-width: 240px; }
+@media (max-width: 560px){
+  .guest-feature { flex-direction: column; text-align: center; }
+}
