@@ -1,43 +1,13 @@
 {
-  "contact.html": {
-    "title": "Contact | Sangathan Parva",
-    "description": "Contact details for Sangathan Parva and Swaminarayan temples in Sydney.",
-    "active": "contact.html"
-  },
-  "donate.html": {
-    "title": "Donate &amp; Seva | Sangathan Parva",
-    "description": "Support the Sangathan Parva celebration — donate, sponsor a meal, or contribute in kind.",
-    "active": "donate.html"
-  },
-  "guests.html": {
-    "title": "Guests &amp; Delegates | Sangathan Parva",
-    "description": "Guest speakers and delegates attending Sangathan Parva — 4-12 July 2026.",
-    "active": "guests.html"
-  },
   "index.html": {
-    "title": "Sangathan Parva | SSMB Sydney 25th Anniversary",
-    "description": "Celebrating 25 years of Shree Swaminarayan Temple Sydney. Sangathan Parva — A Celebration of Unity. 4-12 July 2026.",
-    "active": "index.html"
-  },
-  "journey.html": {
-    "title": "Our Journey | Sangathan Parva",
-    "description": "25 years of faith and unity — the story of Shree Swaminarayan Mandir Bhuj, Sydney.",
-    "active": "journey.html"
+    "title": "Sangathan Parva | 25 Years of SSMB Sydney",
+    "description": "Sangathan Parva — A Celebration of Unity. 25 years of Shree Swaminarayan Mandir Bhuj, Sydney. 4-12 July 2026: schedule, uniform, register, donate.",
+    "active": ""
   },
   "privacy.html": {
     "title": "Privacy Policy | Sangathan Parva",
     "description": "Privacy policy for the Sangathan Parva website — Shree Swaminarayan Mandir Bhuj, Sydney.",
     "active": ""
-  },
-  "register.html": {
-    "title": "Register | Sangathan Parva",
-    "description": "Register your attendance for Sangathan Parva — 4-12 July 2026.",
-    "active": "register.html"
-  },
-  "schedule.html": {
-    "title": "Schedule &amp; Uniform | Sangathan Parva",
-    "description": "Event schedule and dress code for Sangathan Parva — 4-12 July 2026.",
-    "active": "schedule.html"
   },
   "terms.html": {
     "title": "Terms of Use | Sangathan Parva",

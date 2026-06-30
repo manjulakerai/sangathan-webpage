@@ -1666,3 +1666,43 @@ p {
   .sp-day-grid { grid-template-columns:1fr; }
   .sp-gallery { grid-template-columns:1fr; }
 }
+
+/* ── Single-page: hero, anchors, menu, a11y & palette fixes ── */
+
+/* Hero heading + CTA (replaces the old countdown block) */
+.hero-title { font-family: var(--font-heading); font-size: clamp(2.5rem, 7vw, 4.5rem); color: var(--color-heading); margin: 0 0 0.5rem; line-height: 1.05; }
+.hero-subtitle { font-size: clamp(1rem, 2.5vw, 1.25rem); color: var(--color-text); opacity: 0.85; margin: 0 auto 0.5rem; letter-spacing: 0.02em; }
+.hero-cta { display: flex; gap: 1.25rem; align-items: center; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+
+/* Centred sub-heading utility (was inline styles) */
+.subhead-center { text-align: center; margin-top: 2rem; }
+
+/* Donate: four-up ways-to-contribute, responsive */
+.involved-grid--four { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1.5rem; }
+@media (max-width: 900px){ .involved-grid--four { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 560px){ .involved-grid--four { grid-template-columns: 1fr; } }
+
+/* Anchor scroll offset for the sticky nav (single-page jumps) */
+html { scroll-padding-top: 120px; }
+:target { scroll-margin-top: 120px; }
+
+/* Fix mobile dropdown that floated detached below the bar */
+.nav-links { top: 104px; }
+
+/* Phone reachable inside the mobile menu; hidden on desktop (nav-cta shows it) */
+.nav-links__phone a { font-weight: 700; }
+@media (min-width: 768px){ .nav-links__phone { display: none; } }
+
+/* Visible keyboard focus everywhere (WCAG 2.4.7) */
+a:focus-visible, button:focus-visible, .directions-link:focus-visible, .nav-toggle:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Contrast: lift footer links to pass AA */
+.footer-links a { opacity: 0.75; }
+
+/* Bring schedule tables onto the site palette (was off-brand magenta) */
+.sp-table th { background: var(--color-accent); }
+.sp-table .sp-sub th { background: var(--color-accent-light); }
