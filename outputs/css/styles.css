@@ -1646,3 +1646,23 @@ p {
     margin-top: 0;
   }
 }
+
+/* ── Schedule tables, day grid & PDF gallery (shared) ── */
+.sp-table { width:100%; max-width:760px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08); }
+.sp-table th { background:#6b1839; color:#fff; padding:0.7rem 1rem; text-align:left; }
+.sp-table td { padding:0.55rem 1rem; border-bottom:1px solid #eee; vertical-align:top; }
+.sp-table tr:last-child td { border-bottom:none; }
+.sp-table .sp-sub th { background:#9c3a5e; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; }
+.sp-time { white-space:nowrap; font-weight:600; width:38%; }
+.sp-wide { max-width:min(1480px,94vw); }
+.sp-day-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2rem; align-items:start; margin-top:1rem; }
+.sp-day { margin:0; }
+.sp-day-grid .sp-table { max-width:100%; }
+.sp-day h3 { text-align:center; margin-bottom:1rem; }
+.sp-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; max-width:100%; margin:1.5rem auto 0; }
+.sp-gallery a { display:block; border-radius:8px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.12); }
+.sp-gallery img { width:100%; height:auto; display:block; }
+@media (max-width:760px){
+  .sp-day-grid { grid-template-columns:1fr; }
+  .sp-gallery { grid-template-columns:1fr; }
+}
