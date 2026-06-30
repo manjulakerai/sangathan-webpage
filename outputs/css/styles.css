@@ -247,7 +247,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 150px;
+  height: 104px;
 }
 
 .nav-brand {
@@ -258,7 +258,7 @@ p {
 }
 
 .nav-logo {
-  height: 140px;
+  height: 88px;
   width: auto;
 }
 

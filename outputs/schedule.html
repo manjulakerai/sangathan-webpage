@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .sp-table { width:100%; max-width:760px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08); }
+    .sp-table th { background:#6b1839; color:#fff; padding:0.7rem 1rem; text-align:left; }
+    .sp-table td { padding:0.55rem 1rem; border-bottom:1px solid #eee; vertical-align:top; }
+    .sp-table tr:last-child td { border-bottom:none; }
+    .sp-table .sp-sub th { background:#9c3a5e; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; }
+    .sp-time { white-space:nowrap; font-weight:600; width:38%; }
+    .sp-wide { max-width:min(1480px,94vw); }
+    .sp-day-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2rem; align-items:start; margin-top:1rem; }
+    .sp-day { margin:0; }
+    .sp-day-grid .sp-table { max-width:100%; }
+    .sp-day h3 { text-align:center; margin-bottom:1rem; }
+    @media (max-width:760px){ .sp-day-grid { grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
 
@@ -28,13 +42,11 @@
         <li><a href="schedule.html" class="active">Schedule</a></li>
         <li><a href="guests.html">Guests</a></li>
         <li><a href="register.html">Register</a></li>
-        <li><a href="visitor-guide.html">Visitor Guide</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="donate.html">Donate</a></li>
       </ul>
       <div class="nav-cta">
         <a href="tel:+61296764480" class="nav-phone">&#128222; (02) 9676 4480</a>
-        <a href="visitor-guide.html#emergency" class="nav-emergency">Emergency</a>
       </div>
     </div>
   </nav>
@@ -47,30 +59,228 @@
     </div>
   </section>
 
-  <!-- Schedule + Etiquette side by side -->
-  <section class="section">
+  <!-- Schedule at a Glance -->
+  <section class="section bg-alt">
     <div class="container">
+      <h2 class="section-title">Schedule at a Glance</h2>
+      <table class="sp-table">
+        <thead><tr><th>Date</th><th>Highlight</th></tr></thead>
+        <tbody>
+          <tr><td class="sp-time">Sat 4 July &mdash; PM</td><td>Pothi Yatra</td></tr>
+          <tr><td class="sp-time">Sun 5 July &mdash; AM</td><td>Darshan of Prasadi Items</td></tr>
+          <tr><td class="sp-time">Sun 5 July &mdash; PM</td><td>Ladies Cultural Night</td></tr>
+          <tr><td class="sp-time">Tue 7 July &mdash; PM</td><td>Games Night</td></tr>
+          <tr><td class="sp-time">Thu 9 July &mdash; PM</td><td>Raas Utsav</td></tr>
+          <tr><td class="sp-time">Fri 10 July &mdash; PM</td><td>Gents Cultural Night</td></tr>
+          <tr><td class="sp-time">Sat 11 July &mdash; AM</td><td>Kesar Jal Abhishek &amp; Ankoot Darshan</td></tr>
+          <tr><td class="sp-time">Sat 11 July &mdash; PM</td><td>Blessing of NCC &amp; Ekadashi Jagran Bhajan Night</td></tr>
+          <tr><td class="sp-time">Sun 12 July &mdash; AM</td><td>Rath Yatra</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="text-align:center; margin-top:2rem;">Katha Timings</h3>
       <div class="schedule-grid">
-        <div class="schedule-card">
-          <h2 class="section-title">Throughout the Week</h2>
-          <p style="text-align:center; font-size:0.95rem; margin-bottom:1rem;">A special week of bhakti, satsang, seva and sangathan &mdash; with programs for children, youth and adults.</p>
+        <div class="schedule-card bg-cream">
+          <h3>Weekend</h3>
           <ul class="car-hire-list" style="text-align:left;">
-            <li>&#128591; <strong>Satsangi Jeevan Parayan</strong></li>
-            <li>&#127917; <strong>Cultural Programs</strong></li>
-            <li>&#128102;&#127998; <strong>Bal Mahotsav</strong></li>
-            <li>&#128079;&#127995; <strong>Seva, Satsang &amp; Sangathan</strong></li>
+            <li>Morning Aarti &mdash; 8:00 AM</li>
+            <li>Morning Katha &mdash; 9:00 AM</li>
+            <li>Evening Aarti &mdash; 5:30 PM</li>
+            <li>Evening Katha &mdash; 7:30 PM</li>
           </ul>
-          <p class="car-hire-note">Detailed daily timings will be announced soon.</p>
         </div>
         <div class="schedule-card bg-cream">
-          <h2 class="section-title">Mandir Etiquette</h2>
+          <h3>Weekday</h3>
           <ul class="car-hire-list" style="text-align:left;">
-            <li><strong>Modest clothing</strong> &mdash; Please cover shoulders and knees when visiting the Mandir</li>
-            <li><strong>Remove footwear</strong> &mdash; Shoes must be removed before entering the prayer hall</li>
-            <li><strong>Head covering</strong> &mdash; Women are encouraged to cover their head during aarti and puja</li>
-            <li><strong>Comfortable layers</strong> &mdash; Sydney in July can be cool; bring a warm layer</li>
+            <li>Morning Aarti &mdash; 8:00 AM</li>
+            <li>Morning Katha &mdash; 9:00 AM</li>
+            <li>Evening Aarti &mdash; 6:00 PM</li>
+            <li>Evening Katha &mdash; 7:00 PM</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Daily Schedule -->
+  <section class="section">
+    <div class="container sp-wide">
+      <h2 class="section-title">Full Daily Schedule</h2>
+      <div class="sp-day-grid">
+
+        <div class="sp-day">
+          <h3>Saturday 4 July</h3>
+          <table class="sp-table"><tbody>
+            <tr><td class="sp-time">2:30 PM &ndash; 5:00 PM</td><td>Pothi Yatra</td></tr>
+            <tr><td class="sp-time">5:30 PM &ndash; 6:00 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:00 PM &ndash; 7:00 PM</td><td>Parayan Pooja</td></tr>
+            <tr><td class="sp-time">7:00 PM &ndash; 7:30 PM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">7:30 PM &ndash; 8:00 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Prasad Roopi Bhojan</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Sunday 5 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">10:30 AM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">11:00 AM</td><td>Darshan of Prasadi Items</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">5:30 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:30 PM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">8:15 PM</td><td>Ladies Cultural Night</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Monday 6 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Bal Mahotsav &mdash; Parayan / Activities</td></tr>
+            <tr><td class="sp-time">10:30 AM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">6:00 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Sant Pravachan</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Tuesday 7 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Bal Mahotsav &mdash; Parayan / Activities</td></tr>
+            <tr><td class="sp-time">10:30 AM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">6:00 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">8:15 PM</td><td>Games Night</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Wednesday 8 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Bal Mahotsav &mdash; Parayan / Activities</td></tr>
+            <tr><td class="sp-time">10:30 AM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">6:00 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Sant Pravachan</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Thursday 9 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Bal Mahotsav &mdash; Parayan / Activities</td></tr>
+            <tr><td class="sp-time">10:30 AM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">6:00 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">8:15 PM</td><td>Raas Utsav</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Friday 10 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Bal Mahotsav &mdash; Parayan / Activities</td></tr>
+            <tr><td class="sp-time">10:30 AM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">6:00 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">6:30 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Sant Pravachan</td></tr>
+            <tr><td class="sp-time">8:15 PM</td><td>Male Cultural Night</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Saturday 11 July</h3>
+          <table class="sp-table">
+            <thead class="sp-sub"><tr><th>Morning</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Kesar Jal Abhishek</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Bal Mahotsav &mdash; Parayan / Activities</td></tr>
+            <tr><td class="sp-time">9:55 AM</td><td>Kesar Jal Abhishek Aarti</td></tr>
+            <tr><td class="sp-time">10:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Ankoot Aarti</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Lunch</td></tr>
+            </tbody>
+            <thead class="sp-sub"><tr><th>Evening</th><th></th></tr></thead><tbody>
+            <tr><td class="sp-time">5:30 PM</td><td>Aarti, Stuti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">6:00 PM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Blessings: Nilkanth Community Centre</td></tr>
+            <tr><td class="sp-time">7:00 PM</td><td>Prasad Roopi Bhojan</td></tr>
+            <tr><td class="sp-time">7:30 PM</td><td>Parayan Purnahuti Poojan</td></tr>
+            <tr><td class="sp-time">8:00 PM</td><td>Chesta</td></tr>
+            <tr><td class="sp-time">8:15 PM</td><td>Ekadashi Jagran Bhajan</td></tr>
+          </tbody></table>
+        </div>
+
+        <div class="sp-day">
+          <h3>Sunday 12 July</h3>
+          <table class="sp-table"><tbody>
+            <tr><td class="sp-time">8:00 AM</td><td>Aarti &amp; Thaal</td></tr>
+            <tr><td class="sp-time">8:30 AM</td><td>Bhakti Yoga</td></tr>
+            <tr><td class="sp-time">9:00 AM</td><td>Katha</td></tr>
+            <tr><td class="sp-time">9:30 AM</td><td>Meet up at Rath Yatra location</td></tr>
+            <tr><td class="sp-time">10:00 AM</td><td>Rath Yatra</td></tr>
+            <tr><td class="sp-time">11:30 AM</td><td>Rath Yatra Aarti</td></tr>
+            <tr><td class="sp-time">12:00 PM</td><td>Lunch</td></tr>
+          </tbody></table>
+        </div>
+
       </div>
     </div>
   </section>
@@ -79,35 +289,9 @@
   <section class="section bg-alt">
     <div class="container">
       <h2 class="section-title">Daily Uniform &amp; Dress Code</h2>
-      <p class="whats-on-intro">Please wear the colour of the day for each day of Sangathan Parva.</p>
 
-      <div class="uniform-day-table" style="overflow-x:auto;">
-        <table style="width:100%; max-width:760px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08);">
-          <thead>
-            <tr style="background:#6b1839; color:#fff;">
-              <th style="padding:0.7rem 1rem; text-align:left;">Day</th>
-              <th style="padding:0.7rem 1rem; text-align:left;">Date</th>
-              <th style="padding:0.7rem 1rem; text-align:left;">Gents</th>
-              <th style="padding:0.7rem 1rem; text-align:left;">Ladies</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Saturday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">4 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Cream Utsav Kurta</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Bandhani</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Sunday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">5 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Blue</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Blue</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Monday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">6 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Orange or Yellow</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Orange or Yellow</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Tuesday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">7 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Pink</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Pink</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Wednesday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">8 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Green</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Green</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Thursday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">9 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">White</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Ghaghra Choli (any colour)</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Friday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">10 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Red</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Red</td></tr>
-            <tr><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Saturday</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">11 July</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Utsav T-shirt</td><td style="padding:0.6rem 1rem; border-bottom:1px solid #eee;">Utsav Saree</td></tr>
-            <tr><td style="padding:0.6rem 1rem;">Sunday</td><td style="padding:0.6rem 1rem;">12 July</td><td style="padding:0.6rem 1rem;">Cream Utsav Kurta</td><td style="padding:0.6rem 1rem;">Any Pastel Colours</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <figure style="margin:2rem auto 0; max-width:520px; text-align:center;">
+      <figure style="margin:1rem auto 0; max-width:520px; text-align:center;">
         <img src="images/uniform-daily.jpeg" alt="Sangathan Parva daily uniform colours for gents and ladies, 4-12 July 2026" style="width:100%; height:auto; border-radius:8px; box-shadow:0 4px 18px rgba(0,0,0,0.12);">
-        <figcaption class="car-hire-note">Official uniform schedule &mdash; Shree Swaminarayan Mandir Bhuj, Sydney</figcaption>
       </figure>
     </div>
   </section>
@@ -123,12 +307,10 @@
         <div class="whats-on-card">
           <h3>Meal Times</h3>
           <ul class="car-hire-list">
-            <li><strong>Breakfast</strong> &mdash; 7:30 AM &ndash; 9:00 AM</li>
-            <li><strong>Lunch</strong> &mdash; 12:30 PM &ndash; 2:00 PM</li>
-            <li><strong>Dinner</strong> &mdash; 7:00 PM &ndash; 9:00 PM</li>
+            <li><strong>Lunch</strong> &mdash; 12:30 PM &ndash; 1:30 PM</li>
+            <li><strong>Dinner</strong> &mdash; From 6:30 PM</li>
             <li>Prasad will be served after evening aarti</li>
           </ul>
-          <p class="car-hire-note">Times may vary. Check the daily schedule.</p>
         </div>
 
         <div class="whats-on-card">
@@ -142,16 +324,6 @@
           </ul>
         </div>
 
-        <div class="whats-on-card">
-          <h3>Where to Eat</h3>
-          <ul class="car-hire-list">
-            <li>Meals served at the Mandir hall</li>
-            <li>Registration or wristband may be required</li>
-            <li>Please bring your own water bottle</li>
-            <li>Additional dining options in the <a href="visitor-guide.html">Visitor Guide</a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </section>
@@ -159,7 +331,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-name">Shree Swaminarayan Temple Sydney Inc.</div>
+      <div class="footer-name">Shree Swaminarayan Mandir Bhuj - Sydney</div>
       <div>Established 2001</div>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
