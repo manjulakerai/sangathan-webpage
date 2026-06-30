@@ -1706,3 +1706,7 @@ a:focus-visible, button:focus-visible, .directions-link:focus-visible, .nav-togg
 /* Bring schedule tables onto the site palette (was off-brand magenta) */
 .sp-table th { background: var(--color-accent); }
 .sp-table .sp-sub th { background: var(--color-accent-light); }
+
+/* Contact: single card, normal size, centred (not stretched full-width) */
+.contact-single { max-width: 480px; margin-inline: auto; }
+@media (min-width: 768px){ .contact-single { grid-template-columns: 1fr; } }
